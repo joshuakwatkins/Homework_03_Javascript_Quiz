@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./Assets/CSS/style.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li>View Highscore</li>
+                <li id=timer-countdown>Time: </li>
+            </ul>
+        </header>
+        <div class="keep-it-centered">
+            <div class="title-card" id="question-0">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                <h4><button class="purpbutton" id="start-button">Start Quiz</button></h4>
+            </div>
+            <div class="question-card" id="question-1">
+                <h2>Commonly used data types DO NOT include:</h2>
+                <div class="answer-block">
+                    <button>
+                        Strings
+                    </button>
+                    <button>
+                        Booleans
+                    </button>
+                    <button id="correct">
+                        Alerts
+                    </button>
+                    <button>
+                        Numbers
+                    </button>
+                </div>
+            </div>
+            <div class="question-card" id="question-2">
+                <h2>The condition in an if / else statement is enclosed wtihin ____.</h2>
+                <div class="answer-block">
+                    <button>
+                        Quotes
+                    </button>
+                    <button>
+                        Curly Brackets
+                    </button>
+                    <button id="correct">
+                        Parentheses
+                    </button>
+                    <button>
+                        Square Brackets
+                    </button>
+                </div>
+            </div>
+            <div class="question-card" id="question-3">
+                <h2>Arrays in Javascript are used to store _____.</h2>
+                <div class="answer-block">
+                    <button>
+                        Numbers and Strings
+                    </button>
+                    <button>
+                        Other Arrays
+                    </button>
+                    <button>
+                        Booleans
+                    </button>
+                    <button id="correct">
+                        All of the Above
+                    </button>
+                </div>
+            </div>
+            <div class="question-card" id="question-4">
+                <h2>String values must be enclosed within _____ when being assigned to variables.</h2>
+                <div class="answer-block">
+                    <button>
+                        Commas
+                    </button>
+                    <button>
+                        Curly Brackets
+                    </button>
+                    <button id="correct">
+                        Quotes
+                    </button>
+                    <button>
+                        Parentheses
+                    </button>
+                </div>
+            </div>
+            <div class="question-card" id="question-5">
+                <h2> A very useful tool used during development and debugging for printing content to the debugger is:</h2>
+                <div class="answer-block">
+                    <button>
+                        JavaScript
+                    </button>
+                    <button>
+                        Terminal/Bash
+                    </button>
+                    <button>
+                        for loop
+                    </button>
+                    <button id="correct">
+                        console.log
+                    </button>
+                </div>
+            </div>
+            <div class="title-card" id="question-6">
+                <h2>You're All Done!</h2>
+                <p id="final-score"></p>
+                <form>
+                  <h4>Enter Initials:<input id="userID"><button class="purpbutton" id="userIDSubmit">Submit</button></h4> 
+                </form>
+            </div>
+        </div>
+
+
+
+        <script src="./Assets/JS/script.js" ></script>
+    </body>
+</html>

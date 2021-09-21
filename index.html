@@ -15,8 +15,8 @@
     <body>
         <header>
             <ul>
-                <li>View Highscore</li>
-                <li id=timer-countdown>Time: </li>
+                <li id="highScoreButton">View Highscore</li>
+                <li id="timer-countdown">TIME: 750</li>
             </ul>
         </header>
         <div class="keep-it-centered">
@@ -28,16 +28,16 @@
             <div class="question-card" id="question-1">
                 <h2>Commonly used data types DO NOT include:</h2>
                 <div class="answer-block">
-                    <button>
+                    <button class="button1">
                         Strings
                     </button>
-                    <button>
+                    <button class="button2">
                         Booleans
                     </button>
-                    <button id="correct">
+                    <button  class="button3" id="correct">
                         Alerts
                     </button>
-                    <button>
+                    <button class="button4">
                         Numbers
                     </button>
                 </div>
@@ -45,16 +45,16 @@
             <div class="question-card" id="question-2">
                 <h2>The condition in an if / else statement is enclosed wtihin ____.</h2>
                 <div class="answer-block">
-                    <button>
+                    <button id="incorrect">
                         Quotes
                     </button>
-                    <button>
+                    <button id="incorrect">
                         Curly Brackets
                     </button>
                     <button id="correct">
                         Parentheses
                     </button>
-                    <button>
+                    <button id="incorrect">
                         Square Brackets
                     </button>
                 </div>
@@ -62,13 +62,13 @@
             <div class="question-card" id="question-3">
                 <h2>Arrays in Javascript are used to store _____.</h2>
                 <div class="answer-block">
-                    <button>
+                    <button id="incorrect">
                         Numbers and Strings
                     </button>
-                    <button>
+                    <button id="incorrect">
                         Other Arrays
                     </button>
-                    <button>
+                    <button id="incorrect">
                         Booleans
                     </button>
                     <button id="correct">
@@ -79,16 +79,16 @@
             <div class="question-card" id="question-4">
                 <h2>String values must be enclosed within _____ when being assigned to variables.</h2>
                 <div class="answer-block">
-                    <button>
+                    <button id="incorrect">
                         Commas
                     </button>
-                    <button>
+                    <button id="incorrect">
                         Curly Brackets
                     </button>
                     <button id="correct">
                         Quotes
                     </button>
-                    <button>
+                    <button id="incorrect">
                         Parentheses
                     </button>
                 </div>
@@ -96,13 +96,13 @@
             <div class="question-card" id="question-5">
                 <h2> A very useful tool used during development and debugging for printing content to the debugger is:</h2>
                 <div class="answer-block">
-                    <button>
+                    <button id="incorrect">
                         JavaScript
                     </button>
-                    <button>
+                    <button id="incorrect">
                         Terminal/Bash
                     </button>
-                    <button>
+                    <button id="incorrect">
                         for loop
                     </button>
                     <button id="correct">
@@ -118,8 +118,14 @@
                   <h4>Enter Initials:<input id="userID"><button class="purpbutton" id="userIDSubmit">Submit</button></h4> 
                 </form>
             </div>
+            <div class="title-card" id="question-7">
+                <h1>High Scores!</h1>
+                <ol id="high-score-list">
+                </ol>
+                <a href="./index.html"><button class="purpbutton" id="restart-quiz">Take Quiz Again</button></a>
+                <button class="purpbutton" id="reset-hs">Reset Highscores</button>
+            </div>
         </div>
-
 
 
         <script src="./Assets/JS/script.js" ></script>

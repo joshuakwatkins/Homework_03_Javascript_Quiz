@@ -333,7 +333,7 @@ function setHighscores () {
     highScores = JSON.parse(localStorage.getItem("highScores"));
     if (highScores === null) {
         highScores = [];
-    } else {
+    } 
     newScore = {
         userID: userName,
         userScore: gameTime,
@@ -346,7 +346,7 @@ function setHighscores () {
     newScore = {};
     console.log(highScores);
     viewHighScore();
-}
+    
 };
 
 function getHighscores(highScores) {

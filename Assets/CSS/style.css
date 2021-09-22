@@ -104,3 +104,8 @@ input {
 #highScoreButton:hover {
     cursor: pointer;
 }
+
+#answer-response {
+    text-align:center;
+    color:rgb(104, 104, 104);
+}

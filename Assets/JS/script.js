@@ -12,7 +12,7 @@ var highScoreList = document.querySelector("#high-score-list");
 
 var feedback = document.querySelector("#answer-response");
 
-function readyGame () {
+function init () {
 question0.style.display = "block";
 question1.style.display = "none";
 question2.style.display = "none";
@@ -31,8 +31,8 @@ var highScores = [
 
 
 
-function init() {
-    readyGame();
+function readyGame() {
+    location.reload();
 
     
 }
@@ -113,7 +113,7 @@ function quiz () {
                 feedbackTime--;
                 if (feedbackTime > 0) { 
                     // feedback.textContent=" - - - C o r r e c t - - -";
-                    feedback.textContent=" - - - - W R O N G  Y A  D U M M Y - - - - "
+                    feedback.textContent=" - - - - W R O N G - Y A - D U M M Y - - - - "
                 } else if (feedbackTime <= 0) {
                     feedback.textContent=" ";
                     clearInterval(feedbackTimer);
@@ -153,7 +153,7 @@ function quiz () {
                 feedbackTime--;
                 if (feedbackTime > 0) { 
                     // feedback.textContent=" - - - C o r r e c t - - -";
-                    feedback.textContent=" - - - - W R O N G  Y A  D U M M Y - - - - "
+                    feedback.textContent=" - - - - W R O N G - Y A - D U M M Y - - - - "
                 } else if (feedbackTime <= 0) {
                     feedback.textContent=" ";
                     clearInterval(feedbackTimer);
@@ -192,7 +192,7 @@ function quiz () {
                 feedbackTime--;
                 if (feedbackTime > 0) { 
                     // feedback.textContent=" - - - C o r r e c t - - -";
-                    feedback.textContent=" - - - - W R O N G  Y A  D U M M Y - - - - "
+                    feedback.textContent=" - - - - W R O N G - Y A - D U M M Y - - - - "
                 } else if (feedbackTime <= 0) {
                     feedback.textContent=" ";
                     clearInterval(feedbackTimer);
@@ -229,7 +229,7 @@ function quiz () {
                 feedbackTime--;
                 if (feedbackTime > 0) { 
                     // feedback.textContent=" - - - C o r r e c t - - -";
-                    feedback.textContent=" - - - - W R O N G  Y A  D U M M Y - - - - "
+                    feedback.textContent=" - - - - W R O N G - Y A - D U M M Y - - - - "
                 } else if (feedbackTime <= 0) {
                     feedback.textContent=" ";
                     clearInterval(feedbackTimer);
@@ -267,7 +267,7 @@ function quiz () {
                 feedbackTime--;
                 if (feedbackTime > 0) { 
                     // feedback.textContent=" - - - C o r r e c t - - -";
-                    feedback.textContent=" - - - - W R O N G  Y A  D U M M Y - - - - "
+                    feedback.textContent=" - - - - W R O N G - Y A - D U M M Y - - - - "
                 } else if (feedbackTime <= 0) {
                     feedback.textContent=" ";
                     clearInterval(feedbackTimer);
@@ -323,7 +323,12 @@ function viewHighScore () {
     getHighscores(highScores);
     var restartBtn = document.querySelector("#restart-quiz");
     restartBtn.addEventListener("click", readyGame);
-    return;
+    var resetHsBtn = document.querySelector("#reset-hs");
+    resetHsBtn.addEventListener("click", function(){
+        console.log("clicked!")
+        localStorage.clear();
+        readyGame();
+    });
 }
 
 function setHighscores () {
